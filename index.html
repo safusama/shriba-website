@@ -3,134 +3,167 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shriba Singing Bowl Centre — Workshop. Therapy. Healing.</title>
-  <meta name="description" content="Workshop, therapy and healing with hand-beaten Himalayan singing bowls in Thamel, Kathmandu." />
+  <title>Shriba — Hand-beaten Singing Bowls in Kathmandu</title>
+  <meta name="description" content="Discover hand-beaten Himalayan singing bowls in Thamel, Kathmandu. Visit Shriba for workshops, one-to-one sessions, and time to listen." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;600&family=Roboto+Slab:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;500;600&family=Roboto+Slab:wght@400;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="images/logo.png" />
 </head>
 <body>
 
-  <header class="site-header">
+  <!-- HEADER (Holds the nav links) -->
+  <header class="site-header" id="site-header">
     <div class="container header-inner">
-      <a href="#" class="brand">
-        <img src="images/logo.png" alt="Shriba" class="brand-mark" />
-        <span class="brand-text">
-          <span class="brand-name">Shriba</span>
-          <span class="brand-sub">Singing Bowl Centre</span>
-        </span>
+      <a href="#home" class="header-brand" aria-label="Shriba home">
+        <span class="header-brand-name">Shriba</span>
+        <span class="header-brand-location">Thamel · Kathmandu</span>
       </a>
+
       <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#visit">Visit</a>
-        <a href="#contact" class="nav-cta">Contact</a>
+        <div class="nav-group nav-group-left">
+          <a href="#about">About</a>
+          <a href="#story">His story</a>
+        </div>
+        <div class="nav-group nav-group-right">
+          <a href="#services">Services</a>
+          <a href="#visit">Visit</a>
+          <a href="#contact" class="nav-cta">Contact</a>
+        </div>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-image">
-      <img src="images/hero.png" alt="Kathmandu heritage at golden hour" />
+  <!-- HERO SECTION -->
+  <section class="hero-editorial" id="home">
+    <div class="hero-image-wrap">
+      <img src="images/hero.png" alt="Kathmandu heritage at golden hour" class="hero-img" />
+      <div class="hero-logo-container" id="main-logo">
+        <img src="images/logo-hero.png" alt="Shriba" class="logo-large" />
+        <img src="images/logo-mark.png" alt="Shriba" class="logo-small" />
+      </div>
     </div>
-    <div class="hero-band">
-      <div class="container">
-        <p class="eyebrow">Thamel · Kathmandu · Since the craft began</p>
-        <h1>Workshop. Therapy. Healing.</h1>
-        <p class="hero-lede">
-          Hand-beaten Himalayan singing bowls, made and used in Kathmandu.
-          We teach the practice and the craft — we don't promise cures.
+    <div class="container hero-text">
+      <p class="eyebrow brown">Thamel · Kathmandu</p>
+      <h1>Hand-beaten singing bowls, made in Kathmandu.</h1>
+      <p class="hero-lede">
+        Visit our small studio to explore the craft, learn to work with a bowl,
+        or simply take a moment to listen.
+      </p>
+      <div class="hero-actions">
+        <a href="#visit" class="btn btn-primary">Visit the studio</a>
+        <a href="#services" class="hero-secondary-link">Explore workshops</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION (Staggered) -->
+  <section id="about" class="section">
+    <div class="container about-stagger">
+      <div class="about-image">
+        <img src="images/bowl.png" alt="Hand holding a brass singing bowl" />
+        <p class="caption">A singing bowl, held and heard in Kathmandu.</p>
+      </div>
+      <div class="about-text">
+        <p class="eyebrow brown">The place</p>
+        <h2>A small studio for sound and craft.</h2>
+        <p class="lead-text">
+          In the heart of Thamel, Shriba is a place to meet Himalayan singing bowls up close.
         </p>
-        <div class="hero-actions">
-          <a href="#services" class="btn btn-primary">Explore Services</a>
-          <a href="#visit" class="btn btn-ghost">Visit the Centre</a>
+        <p>
+          Explore hand-beaten brass bowls, learn how to hold and play one, or settle in for a one-to-one sound session. We keep the experience personal, unhurried, and grounded in the craft.
+        </p>
+        <p class="italic-quote">A little time to learn, practice, and listen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRACTITIONER STORY -->
+  <section id="story" class="section practitioner-story">
+    <div class="container">
+      <div class="story-intro">
+        <figure class="story-image">
+          <img src="images/saroj-australia.jpg" alt="Saroj Shakya holding a singing bowl during a visit to Australia" />
+          <figcaption class="caption">Saroj Shakya, sharing the practice in Australia.</figcaption>
+        </figure>
+        <div class="story-copy">
+          <p class="eyebrow brown">A lifelong practice</p>
+          <h2>A tradition learned at home, shared around the world.</h2>
+          <p class="lead-text">
+            For 30 years, Saroj Shakya has practiced and taught Himalayan singing bowl work, learning through family tradition.
+          </p>
+          <p>
+            At Shriba in Thamel, he welcomes visitors to learn through hands-on workshops and one-to-one sound sessions. His approach is practical and personal: discover how to hold, play, and listen to a bowl at your own pace.
+          </p>
+          <p class="story-note">Rooted in Nepal. Shared through teaching, one bowl at a time.</p>
+        </div>
+      </div>
+
+      <ol class="story-timeline" aria-label="Highlights from Saroj Shakya's teaching journey">
+        <li class="story-milestone">
+          <p class="story-date">Since the 1990s</p>
+          <h3>Family tradition</h3>
+          <p>Builds a lifelong practice and teaches singing bowl techniques.</p>
+        </li>
+        <li class="story-milestone">
+          <p class="story-date">2019–2024</p>
+          <h3>Teaching abroad</h3>
+          <p>Leads workshops, sessions, and classes in Thailand, Vietnam, Singapore, and Australia.</p>
+        </li>
+        <li class="story-milestone">
+          <p class="story-date">2023</p>
+          <h3>A centre in Thamel</h3>
+          <p>Opens a Kathmandu centre for workshops, practice, and singing bowl sessions.</p>
+        </li>
+        <li class="story-milestone">
+          <p class="story-date">2025</p>
+          <h3>Chongqing, China</h3>
+          <p>Teaches and demonstrates at the Yoga Meditation Festival.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="section section-alt">
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow brown">Services</p>
+        <h2>The Practice</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-block">
+          <h3>Workshops</h3>
+          <p>Learn to hold, strike and circle a Himalayan singing bowl. Small groups, patient pace, no prior experience needed.</p>
+        </div>
+        <div class="service-block">
+          <h3>Therapy Sessions</h3>
+          <p>One-to-one sessions on the floor, using bowls placed on and around the body. Soft light, textiles, unhurried.</p>
+        </div>
+        <div class="service-block">
+          <h3>Bowls &amp; Craft</h3>
+          <p>Hand-beaten bowls for practice, export and retail. Come see how they are made and pick the one that sounds right.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="about" class="section">
-    <div class="container about-grid">
-      <div class="about-text">
-        <p class="eyebrow brown">About Shriba</p>
-        <h2>Warm, handmade, heritage.</h2>
-        <p>
-          Shriba Singing Bowl Centre is the small workshop and practice space in
-          Thamel, Kathmandu. Every bowl we sell is hand-beaten from brass by
-          artisans we know — the same families who have made them for
-          generations.
-        </p>
-        <p>
-          We offer workshops for visitors who want to learn the practice,
-          one-to-one therapy sessions, and a quiet space to sit with the sound.
-          Our approach is plain-spoken and unhurried.
-        </p>
-        <ul class="pillars">
-          <li><span class="dot brown-dot"></span> Hand-beaten Himalayan bowls</li>
-          <li><span class="dot tan-dot"></span> Workshops &amp; therapy sessions</li>
-          <li><span class="dot red-dot"></span> Rooted in Kathmandu heritage</li>
-        </ul>
-      </div>
-      <div class="about-image">
-        <img src="images/bowl.png" alt="Hand holding a brass singing bowl" />
-        <p class="caption">Brass warmth, hand-held, close crops.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="services" class="section section-alt">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow brown">Services</p>
-        <h2>What we do</h2>
-      </div>
-      <div class="cards">
-        <article class="card">
-          <div class="card-icon">◎</div>
-          <h3>Workshops</h3>
-          <p>
-            Learn to hold, strike and circle a Himalayan singing bowl.
-            Small groups, patient pace, no prior experience needed.
-          </p>
-        </article>
-        <article class="card">
-          <div class="card-icon">◐</div>
-          <h3>Therapy Sessions</h3>
-          <p>
-            One-to-one sessions on the floor, using bowls placed on and
-            around the body. Soft light, textiles, unhurried.
-          </p>
-        </article>
-        <article class="card">
-          <div class="card-icon">◍</div>
-          <h3>Bowls &amp; Craft</h3>
-          <p>
-            Hand-beaten bowls for practice, export and retail.
-            Come see how they are made and pick the one that sounds right.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
+  <!-- VISIT SECTION -->
   <section id="visit" class="section">
-    <div class="container visit-grid">
-      <div class="visit-image">
-        <img src="images/practice.jpg" alt="Singing bowl practice session on the floor" />
-        <p class="caption">Real practice: floor, textiles, soft light.</p>
-      </div>
+    <div class="container visit-stagger">
       <div class="visit-text">
         <p class="eyebrow brown">Visit</p>
-        <h2>A quiet room in Thamel.</h2>
-        <p>
-          Drop by, sit with the bowls, ask questions. We keep the space
-          small and the pace slow. If you'd like a workshop or a session,
-          send a message ahead so we can hold a time for you.
+        <h2>Find us in Thamel.</h2>
+        <p class="lead-text">
+          Step in, sit with the bowls, and ask questions. We keep the space small and the pace slow.
         </p>
+        <p>
+          Message us ahead to arrange a workshop or one-to-one session.
+        </p>
+        <a href="#contact" class="btn btn-primary">Plan your visit</a>
         <dl class="facts">
           <div>
             <dt>Address</dt>
@@ -140,40 +173,79 @@
             <dt>Hours</dt>
             <dd>Sun – Fri · 10:00 – 18:00</dd>
           </div>
-          <div>
-            <dt>Languages</dt>
-            <dd>Nepali · English</dd>
-          </div>
         </dl>
+      </div>
+      <div class="visit-image">
+        <img src="images/practice.jpg" alt="Singing bowl practice session on the floor" />
+        <p class="caption">Real practice: floor, textiles, soft light.</p>
+      </div>
+    </div>
+    <div class="container visit-map">
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14130.92838861652!2d85.30688791481473!3d27.715483538200964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18fcc1a51269%3A0x686cd3d948b2c88c!2sThamel%2C%20Kathmandu%2044600%2C%20Nepal!5e0!3m2!1sen!2snp!4v1698765432109!5m2!1sen!2snp"
+          title="Map showing Shriba in Thamel, Kathmandu"
+          width="100%" height="400" style="border:0; border-radius: 2px;" allowfullscreen="" loading="lazy">
+        </iframe>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section section-brown">
-    <div class="container contact-grid">
-      <div class="contact-intro">
+  <!-- CRAFT SECTION -->
+  <section class="section section-craft">
+    <div class="container craft-inner">
+      <p class="eyebrow tan">The craft</p>
+      <h2>Made by hand. Shared with care.</h2>
+      <p class="craft-lede">
+        The bowls we share are hand-beaten by Kathmandu artisans, with craft knowledge carried across generations. At Shriba, that living tradition continues through the simple acts of making, teaching, and listening.
+      </p>
+      <p>
+        Come learn the practice at your own pace. We share the sound and the craft without promising cures.
+      </p>
+    </div>
+  </section>
+
+  <!-- PHOTO SLIDER SECTION -->
+  <section class="section" style="background: var(--cream);">
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow brown">The practice</p>
+        <h2>Sound, shared around the world.</h2>
+        <p>Moments from workshops and sound sessions with Master Saroj Shakya.</p>
+      </div>
+      <!-- Slider Container -->
+      <div class="slider-container">
+        <div class="slider-track" id="journey-photos" role="region" aria-label="Photos from singing bowl workshops and sessions" tabindex="0">
+          <!-- You can add as many images here as you like -->
+          <div class="slide"><img src="images/practice.jpg" alt="Singing bowl practice session on the floor"></div>
+          <div class="slide"><img src="images/bowl.png" alt="Hand holding a brass singing bowl"></div>
+          <div class="slide"><img src="images/hero.png" alt="Shriba practitioners in front of Kathmandu heritage buildings"></div>
+          <!-- Add more slides below as you get photos -->
+        </div>
+      </div>
+      <div class="slider-controls" aria-label="Photo gallery controls">
+        <button class="slider-control" type="button" data-direction="previous" aria-label="Show previous photos" aria-controls="journey-photos">&larr;</button>
+        <button class="slider-control" type="button" data-direction="next" aria-label="Show next photos" aria-controls="journey-photos">&rarr;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section section-contact">
+    <div class="container contact-layout">
+      <div class="contact-header">
         <p class="eyebrow tan">Get in touch</p>
         <h2>Come say hello.</h2>
-        <p class="contact-lede">
-          Send a message for workshops, therapy bookings, wholesale
-          enquiries, or just to ask about the craft.
-        </p>
       </div>
       <div class="contact-card">
         <h3 class="contact-name">Safal Shakya</h3>
         <p class="contact-role">Sound Practitioner</p>
         <ul class="contact-list">
           <li>
-            <span class="ico">☎</span>
             <a href="tel:+9779808138005">+977 9808138005</a>
           </li>
           <li>
-            <span class="ico">⌖</span>
-            <span>Thamel, Kathmandu</span>
-          </li>
-          <li>
-            <span class="ico">✉</span>
-            <a href="mailto:Himalayasbowls@gmail.com">Himalayasbowls@gmail.com</a>
+            <a href="mailto:shribabowls@gmail.com">shribabowls@gmail.com</a> <!-- UPDATE YOUR NEW EMAIL HERE -->
           </li>
         </ul>
       </div>
@@ -183,18 +255,56 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <img src="images/logo-white.png" alt="" class="footer-mark" />
+        <img src="images/logo-mark.png" alt="" class="footer-mark" />
         <div>
           <p class="footer-name">Shriba</p>
           <p class="footer-sub">Himalayan Singing Bowls</p>
         </div>
       </div>
-      <p class="footer-copy">© <span id="year"></span> Shriba Singing Bowl Centre · Thamel, Kathmandu</p>
+      <p class="footer-copy">© <span id="year"></span> Shriba Singing Bowl Centre</p>
     </div>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script>
+  // Simple scroll fade-in
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  });
+
+  const hiddenElements = document.querySelectorAll('.section, .cinematic-split, .slider-container');
+  hiddenElements.forEach((el) => el.classList.add('hidden'));
+  hiddenElements.forEach((el) => observer.observe(el));
+
+  document.querySelectorAll('.slider-control').forEach((button) => {
+    button.addEventListener('click', () => {
+      const track = document.getElementById(button.getAttribute('aria-controls'));
+      const direction = button.dataset.direction === 'next' ? 1 : -1;
+      track.scrollBy({ left: direction * track.clientWidth * 0.8, behavior: 'smooth' });
+    });
+  });
+</script>
+  <script>
+    // --- Scroll Logo Animation ---
+    const logo = document.getElementById('main-logo');
+    const header = document.getElementById('site-header');
+
+    window.addEventListener('scroll', () => {
+      // If the user has scrolled down more than 100 pixels
+      if (window.scrollY > 100) {
+        logo.classList.add('scrolled');
+        header.classList.add('scrolled-header');
+      } else {
+        logo.classList.remove('scrolled');
+        header.classList.remove('scrolled-header');
+      }
+    });
   </script>
 </body>
 </html>
