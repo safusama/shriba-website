@@ -23,7 +23,7 @@
         <span class="header-brand-location">Thamel · Kathmandu</span>
       </a>
 
-      <nav class="nav">
+      <nav class="nav" aria-label="Main navigation">
         <div class="nav-group nav-group-left">
           <a href="#about">About</a>
           <a href="#story">His story</a>
@@ -40,24 +40,15 @@
   <!-- HERO SECTION -->
   <section class="hero-editorial" id="home">
     <div class="hero-image-wrap">
-      <img src="images/hero.png" alt="Kathmandu heritage at golden hour" class="hero-img" />
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="images/hero.png" aria-label="A singing bowl being played">
+        <source src="videos/singing-bowl-hero.mp4" type="video/mp4" />
+      </video>
       <div class="hero-logo-container" id="main-logo">
         <img src="images/logo-hero.png" alt="Shriba" class="logo-large" />
         <img src="images/logo-mark.png" alt="Shriba" class="logo-small" />
       </div>
     </div>
-    <div class="container hero-text">
-      <p class="eyebrow brown">Thamel · Kathmandu</p>
-      <h1>Hand-beaten singing bowls, made in Kathmandu.</h1>
-      <p class="hero-lede">
-        Visit our small studio to explore the craft, learn to work with a bowl,
-        or simply take a moment to listen.
-      </p>
-      <div class="hero-actions">
-        <a href="#visit" class="btn btn-primary">Visit the studio</a>
-        <a href="#services" class="hero-secondary-link">Explore workshops</a>
-      </div>
-    </div>
+    <h1 class="visually-hidden">Shriba Singing Bowl Centre in Thamel, Kathmandu</h1>
   </section>
 
   <!-- ABOUT SECTION (Staggered) -->
@@ -194,14 +185,18 @@
   <!-- CRAFT SECTION -->
   <section class="section section-craft">
     <div class="container craft-inner">
-      <p class="eyebrow tan">The craft</p>
-      <h2>Made by hand. Shared with care.</h2>
-      <p class="craft-lede">
-        The bowls we share are hand-beaten by Kathmandu artisans, with craft knowledge carried across generations. At Shriba, that living tradition continues through the simple acts of making, teaching, and listening.
-      </p>
-      <p>
-        Come learn the practice at your own pace. We share the sound and the craft without promising cures.
-      </p>
+      <div class="craft-heading">
+        <p class="eyebrow tan">The craft</p>
+        <h2>Made by hand. Shared with care.</h2>
+      </div>
+      <div class="craft-copy">
+        <p class="craft-lede">
+          The bowls we share are hand-beaten by Kathmandu artisans, with craft knowledge carried across generations. At Shriba, that living tradition continues through the simple acts of making, teaching, and listening.
+        </p>
+        <p>
+          Come learn the practice at your own pace. We share the sound and the craft without promising cures.
+        </p>
+      </div>
     </div>
   </section>
 
@@ -295,8 +290,7 @@
     const logo = document.getElementById('main-logo');
     const header = document.getElementById('site-header');
 
-    window.addEventListener('scroll', () => {
-      // If the user has scrolled down more than 100 pixels
+    const updateScrollHeader = () => {
       if (window.scrollY > 100) {
         logo.classList.add('scrolled');
         header.classList.add('scrolled-header');
@@ -304,7 +298,10 @@
         logo.classList.remove('scrolled');
         header.classList.remove('scrolled-header');
       }
-    });
+    };
+
+    window.addEventListener('scroll', updateScrollHeader, { passive: true });
+    updateScrollHeader();
   </script>
 </body>
 </html>
