@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timeline & Journey — Shriba Himalayan Singing Bowls</title>
+  <meta name="description" content="Explore the journey of Master Saroj Shakya: thirty years of Himalayan singing bowl craft, sound healing, and international teaching from Kathmandu to China, Vietnam, and Australia." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <style>
+    /* Specific styles for the dedicated timeline page */
+    .timeline-hero {
+      background: var(--cream);
+      padding: clamp(120px, 15vw, 170px) 0 clamp(48px, 6vw, 72px);
+      border-bottom: 1px solid var(--stone);
+      position: relative;
+    }
+    .timeline-hero-inner {
+      max-width: 860px;
+    }
+        .timeline-hero-eyebrow {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          font-size: var(--fs-label);
+          letter-spacing: 0.25em;
+          text-transform: uppercase;
+          font-weight: 700;
+          color: var(--red);
+          margin-bottom: 18px;
+        }
+        .timeline-hero-title {
+      font-family: var(--font-heading);
+      font-size: var(--fs-h1);
+      font-weight: 500;
+      line-height: 1.05;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--ink);
+      margin-bottom: 24px;
+      -webkit-font-smoothing: antialiased;
+    }
+        .timeline-hero-lead {
+      font-size: var(--fs-body);
+      line-height: 1.7;
+      color: rgba(0, 0, 0, 0.85);
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+    .timeline-hero-nav {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    /* Archive Chapters Section */
+    .archive-section {
+      background: var(--cream);
+      padding: clamp(70px, 8vw, 110px) 0;
+    }
+    .archive-heading {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto clamp(48px, 6vw, 72px);
+    }
+    .archive-chapter {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(40px, 7vw, 90px);
+      align-items: center;
+      padding: clamp(36px, 5vw, 60px) 0;
+      border-bottom: 1px solid var(--stone);
+    }
+    .archive-chapter:last-child {
+      border-bottom: none;
+    }
+    .archive-chapter.reverse {
+      direction: rtl;
+    }
+    .archive-chapter.reverse > * {
+      direction: ltr;
+    }
+    .archive-media {
+      position: relative;
+      border: 1px solid var(--stone);
+      padding: 10px;
+      background: var(--paper);
+      box-shadow: 0 10px 30px rgba(93, 62, 46, 0.07);
+    }
+    .archive-media img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      display: block;
+    }
+        .archive-media .caption {
+      margin: 12px 4px 2px;
+      font-size: var(--fs-small);
+      color: #666;
+      font-style: italic;
+    }
+        .archive-date-tag {
+      font-size: var(--fs-label);
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--red);
+      margin-bottom: 8px;
+    }
+    .archive-title {
+      font-family: var(--font-heading);
+      font-size: var(--fs-h2);
+      font-weight: 500;
+      margin-bottom: 16px;
+      line-height: 1.3;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+    .archive-copy p {
+      font-size: var(--fs-body);
+      line-height: 1.8;
+      color: rgba(0, 0, 0, 0.85);
+    }
+    .archive-evidence-note {
+      margin-top: 20px;
+      padding: 14px 18px;
+      background: rgba(225, 192, 154, 0.22);
+      border-left: 3px solid var(--brown);
+      font-size: var(--fs-small);
+      color: #443226;
+      border-radius: 0 2px 2px 0;
+    }
+
+    /* Fixed Header for subpage */
+    .site-header.always-visible {
+      transform: translateY(0);
+      position: sticky;
+      top: 0;
+      background: var(--cream);
+    }
+    .nav a.active {
+      font-weight: 700;
+      border-bottom: 2px solid var(--brown);
+      padding-bottom: 2px;
+    }
+
+    @media (max-width: 860px) {
+      .archive-chapter {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+      .archive-chapter.reverse {
+        direction: ltr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SITE HEADER -->
+  <header class="site-header always-visible" id="site-header">
+    <div class="container header-inner">
+      <a href="index.html#home" class="header-brand" aria-label="Shriba home">
+        <span class="header-brand-name">Shriba</span>
+        <span class="header-brand-location">Thamel · Kathmandu</span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <div class="nav-group nav-group-left">
+          <a href="index.html#about">About</a>
+          <a href="timeline.html" class="active">Timeline</a>
+          <a href="index.html#services">Services</a>
+        </div>
+        <div class="nav-group nav-group-right">
+          <a href="index.html#visit">Visit</a>
+          <a href="index.html#contact" class="nav-cta">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="timeline-hero">
+    <div class="container timeline-hero-inner">
+      <div class="timeline-hero-eyebrow">
+        <img src="images/logo-mark.png" alt="" style="height: 18px; width: auto;" />
+        <span>Living Heritage · 1990s to 2025</span>
+      </div>
+      <h1 class="timeline-hero-title">A Living Tradition, Carried Forward.</h1>
+      <p class="timeline-hero-lead">
+        For over thirty years, Master Saroj Shakya has cultivated and taught Himalayan singing bowl practice — rooted in Kathmandu artisan lineage, shared across Asia and Australia, and preserved daily at Shriba in Thamel.
+      </p>
+      <div class="timeline-hero-nav">
+        <a href="#slides-showcase" class="btn btn-primary">Explore Timeline Slides</a>
+        <a href="#chapters" class="dwarikas-page-link">Read Practice Archive &darr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DWARIKA'S SLIDES TIMELINE COMPONENT (MAIN CENTERPIECE) -->
+  <section id="slides-showcase" class="section dwarikas-timeline-section">
+    <div class="container">
+
+      <!-- Dwarika's Header -->
+      <div class="dwarikas-header">
+        <div class="dwarikas-title-col">
+          <h2 class="dwarikas-headline">
+            <span class="dwarikas-line">A Family Legacy,</span>
+            <span class="dwarikas-line">Carried Forward</span>
+          </h2>
+        </div>
+        <div class="dwarikas-copy-col">
+          <p class="dwarikas-lead-text">
+            Across three decades, Master Saroj Shakya has carried forward the craft and healing sound of Himalayan singing bowls — not simply to preserve heritage, but to let it breathe in daily practice.
+          </p>
+          <p class="dwarikas-lead-text">
+            Here, heritage is not preserved in isolation but lived and taught — in hand-beaten bronze, authentic floor therapies, and masterclasses carried from Kathmandu courtyards to meditation halls around the world.
+          </p>
+        </div>
+      </div>
+
+      <!-- Dwarika's Controls Bar -->
+      <div class="dwarikas-controls-bar">
+        <div class="dwarikas-slider-meta">
+          <span>Highlights from the Journey</span>
+          <span>·</span>
+          <span id="dwarikas-counter">01 / 06</span>
+        </div>
+        <div class="dwarikas-nav-btns">
+          <button class="dwarikas-nav-btn" id="dwarikas-btn-prev" aria-label="Previous slide" type="button">&#8592;</button>
+          <button class="dwarikas-nav-btn" id="dwarikas-btn-next" aria-label="Next slide" type="button">&#8594;</button>
+        </div>
+      </div>
+
+      <!-- Dwarika's Slide Carousel -->
+      <div class="dwarikas-track-wrapper">
+        <div class="dwarikas-track" id="dwarikas-track" role="region" aria-label="Saroj Shakya Teaching Journey" tabindex="0">
+
+          <!-- Slide 1: Since 1990s - Family Tradition -->
+          <article class="dwarikas-card">
+            <div class="dwarikas-card-media">
+              <img src="images/timeline-nepal-factory.jpg" alt="Master Saroj Shakya with singing bowl therapist trainees at Kathmandu workshop" class="card-img-factory" />
+              <span class="dwarikas-tag">Nepal · Craft</span>
+            </div>
+            <div class="dwarikas-card-content">
+              <p class="dwarikas-card-date">Since the 1990s</p>
+              <h3 class="dwarikas-card-title">Family Tradition</h3>
+              <p class="dwarikas-card-desc">Rooted in Kathmandu family craft, Master Saroj Shakya built a lifelong practice — mastering hand-beaten bronze acoustics and training future singing bowl therapists at the workshop.</p>
+            </div>
+          </article>
+
+          <!-- Slide 2: 2019-2024 - Vietnam Workshops -->
+          <article class="dwarikas-card">
+            <div class="dwarikas-card-media">
+              <img src="images/timeline-vietnam-class.jpg" alt="Singing bowl class and sound meditation in Vietnam" class="card-img-vietnam" />
+              <span class="dwarikas-tag">Vietnam · Class</span>
+            </div>
+            <div class="dwarikas-card-content">
+              <p class="dwarikas-card-date">2019–2024</p>
+              <h3 class="dwarikas-card-title">Teaching Abroad</h3>
+              <p class="dwarikas-card-desc">Carrying Himalayan sound traditions across Southeast Asia, leading therapist certification courses, sound meditation classes, and masterclasses for hundreds of students in Vietnam and Thailand.</p>
+            </div>
+          </article>
+
+          <!-- Slide 3: 2019-2024 - Australia Bell & Bowls -->
+          <article class="dwarikas-card">
+            <div class="dwarikas-card-media">
+              <img src="images/timeline-australia.jpg" alt="Saroj Shakya holding singing bowl at outdoor bell site in Australia" class="card-img-australia" />
+              <span class="dwarikas-tag">Australia · Journey</span>
+            </div>
+            <div class="dwarikas-card-content">
+              <p class="dwarikas-card-date">2019–2024</p>
+              <h3 class="dwarikas-card-title">Global Resonance</h3>
+              <p class="dwarikas-card-desc">Sharing the restorative frequencies of traditional singing bowls with global communities, conducting outdoor bell ceremonies and therapeutic sound gatherings across Australia.</p>
+            </div>
+          </article>
+
+          <!-- Slide 4: 2023 - A Centre in Thamel -->
+          <article class="dwarikas-card">
+            <div class="dwarikas-card-media">
+              <img src="images/practice.jpg" alt="One-to-one singing bowl session on the floor in Thamel" class="card-img-thamel" />
+              <span class="dwarikas-tag">Kathmandu · Studio</span>
+            </div>
+            <div class="dwarikas-card-content">
+              <p class="dwarikas-card-date">2023</p>
+              <h3 class="dwarikas-card-title">A Centre in Thamel</h3>
+              <p class="dwarikas-card-desc">Opens Shriba in Thamel, Kathmandu — establishing an intimate, unhurried sanctuary for one-to-one floor therapy, tactile sound immersion, and hands-on singing bowl workshops.</p>
+            </div>
+          </article>
+
+          <!-- Slide 5: 2025 - Chongqing, China Stage -->
+          <article class="dwarikas-card">
+            <div class="dwarikas-card-media">
+              <img src="images/timeline-chongqing-stage.jpg" alt="Saroj Shakya conducting sound healing on stage in Chongqing China" class="card-img-china-stage" />
+              <span class="dwarikas-tag">China · Festival</span>
+            </div>
+            <div class="dwarikas-card-content">
+              <p class="dwarikas-card-date">2025</p>
+              <h3 class="dwarikas-card-title">Chongqing, China</h3>
+              <p class="dwarikas-card-desc">Invited master presenter at the Yoga Meditation Festival in Chongqing, conducting main-stage sound healing with traditional singing bowls and gongs before an international audience.</p>
+            </div>
+          </article>
+
+          <!-- Slide 6: 2025 - Chongqing Technique Teaching -->
+          <article class="dwarikas-card">
+            <div class="dwarikas-card-media">
+              <img src="images/timeline-chongqing-teaching.jpg" alt="Saroj Shakya teaching bowl placement technique to students in Chongqing" class="card-img-china-teach" />
+              <span class="dwarikas-tag">China · Masterclass</span>
+            </div>
+            <div class="dwarikas-card-content">
+              <p class="dwarikas-card-date">2025</p>
+              <h3 class="dwarikas-card-title">Healing Technique</h3>
+              <p class="dwarikas-card-desc">Teaching students the precise art of holding and striking traditional bowls, and demonstrating ancient Nepali acoustic placement techniques for deep physical relaxation.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Dwarika's Progress Bar -->
+        <div class="dwarikas-progress-wrap">
+          <div class="dwarikas-progress-bar" id="dwarikas-progress-bar"></div>
+        </div>
+      </div>
+
+      <div class="dwarikas-bottom-action">
+        <p class="dwarikas-footnote">Photographs extracted directly from official professional practice evidence documentation.</p>
+        <span class="dwarikas-slider-meta">Use &larr; &rarr; or swipe horizontally to explore all milestones</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CHAPTER ARCHIVE SECTION (DETAILED BREAKDOWN) -->
+  <section id="chapters" class="archive-section">
+    <div class="container">
+      <div class="archive-heading">
+        <p class="eyebrow brown">Documented Practice</p>
+        <h2>Chapters of Craft and Sound</h2>
+        <p>A closer look at the key milestones, teaching journeys, and documentary evidence of Master Saroj Shakya's singing bowl vocation.</p>
+      </div>
+
+      <!-- Chapter 1: Nepal Factory -->
+      <article class="archive-chapter">
+        <div class="archive-media">
+          <img src="images/timeline-nepal-factory.jpg" alt="Master Saroj Shakya at Nepal singing bowl workshop" />
+          <p class="caption">Mr. Saroj Shakya (front, green jacket) with trainees at the International Himalaya Singing Bowl Therapist Training course.</p>
+        </div>
+        <div class="archive-copy">
+          <p class="archive-date-tag">Since the 1990s · Kathmandu Valley, Nepal</p>
+          <h3 class="archive-title">Family Tradition & Artisan Craft</h3>
+          <p>
+            Rooted in Kathmandu's artisan traditions, Saroj Shakya learned the metallurgy and healing application of hand-beaten Himalayan bronze bowls through generations of family knowledge.
+          </p>
+          <p>
+            At the workshop in Nepal, he has spent decades teaching students from all over the world how authentic singing bowls are forged, hammered, tuned, and applied for restorative therapy.
+          </p>
+          <div class="archive-evidence-note">
+            <strong>Official Evidence Record:</strong> Nepal singing bowl factory — International Himalaya Singing Bowl Therapist Training cohort.
+          </div>
+        </div>
+      </article>
+
+      <!-- Chapter 2: Southeast Asia / Vietnam -->
+      <article class="archive-chapter reverse">
+        <div class="archive-media">
+          <img src="images/timeline-vietnam-class.jpg" alt="Singing bowl class in Vietnam with rows of students" />
+          <p class="caption">Vietnam: singing bowl class in progress, with students seated on mats with singing bowls and instructors at the front.</p>
+        </div>
+        <div class="archive-copy">
+          <p class="archive-date-tag">2019–2024 · Vietnam, Thailand & Singapore</p>
+          <h3 class="archive-title">Teaching Abroad & Therapist Training</h3>
+          <p>
+            Responding to growing international interest in holistic wellness and authentic sound therapy, Saroj traveled extensively to lead workshops, group sound baths, and therapist certification programs.
+          </p>
+          <p>
+            In Vietnam, Thailand, and Singapore, he introduced hundreds of students to the respectful, patient art of sound meditation — ensuring the traditional knowledge remained pure and unadulterated.
+          </p>
+          <div class="archive-evidence-note">
+            <strong>Official Evidence Record:</strong> Vietnam masterclass — full cohort seated on mats with individual bowls and mallets.
+          </div>
+        </div>
+      </article>
+
+      <!-- Chapter 3: Australia -->
+      <article class="archive-chapter">
+        <div class="archive-media">
+          <img src="images/timeline-australia.jpg" alt="Saroj Shakya holding singing bowl at outdoor bell site in Australia" />
+          <p class="caption">Australia: Mr. Saroj Shakya holding a traditional singing bowl and mallet at an outdoor bell site in Australia.</p>
+        </div>
+        <div class="archive-copy">
+          <p class="archive-date-tag">2019–2024 · Australia</p>
+          <h3 class="archive-title">Outdoor Resonance & International Journeys</h3>
+          <p>
+            During journeys across Australia, Master Saroj demonstrated the acoustic principles of ancient singing bowls in outdoor sanctuaries and natural landscapes.
+          </p>
+          <p>
+            Bringing hand-beaten Nepali bowls into harmony with large outdoor bells and natural acoustics, his Australian sessions emphasized listening deeply and reconnecting with bodily stillness.
+          </p>
+          <div class="archive-evidence-note">
+            <strong>Official Evidence Record:</strong> Australia practice documentation — outdoor bell resonance and traditional singing bowl study.
+          </div>
+        </div>
+      </article>
+
+      <!-- Chapter 4: Studio in Thamel -->
+      <article class="archive-chapter reverse">
+        <div class="archive-media">
+          <img src="images/practice.jpg" alt="One-to-one singing bowl session on the floor in Thamel studio" />
+          <p class="caption">Kathmandu: one-to-one singing bowl therapy on the floor with soft light and textiles.</p>
+        </div>
+        <div class="archive-copy">
+          <p class="archive-date-tag">2023 · Thamel, Kathmandu</p>
+          <h3 class="archive-title">Establishing the Shriba Centre</h3>
+          <p>
+            In 2023, Shriba opened its doors in the heart of Thamel, Kathmandu — intentionally conceived as a calm sanctuary away from the bustling streets.
+          </p>
+          <p>
+            Here, visitors experience personal one-to-one sound floor sessions, learn to hold and play singing bowls at their own pace, and select authentic hand-beaten pieces to take home.
+          </p>
+          <div class="archive-evidence-note">
+            <strong>Studio Practice:</strong> Grounded floor work, handwoven textiles, authentic sound therapy without mystical embellishments.
+          </div>
+        </div>
+      </article>
+
+      <!-- Chapter 5: Chongqing Festival -->
+      <article class="archive-chapter">
+        <div class="archive-media">
+          <img src="images/timeline-chongqing-stage.jpg" alt="Saroj Shakya on stage at Yoga Meditation Festival in Chongqing" />
+          <p class="caption">Chongqing, China: Mr. Saroj Shakya (seated, centre) conducting sound healing on stage at the Yoga Meditation Festival.</p>
+        </div>
+        <div class="archive-copy">
+          <p class="archive-date-tag">22–24 August 2025 · Chongqing, China</p>
+          <h3 class="archive-title">Yoga Meditation Festival Main Stage</h3>
+          <p>
+            From August 22 to 24, 2025, Master Saroj Shakya was honored as a featured international presenter at the Yoga Meditation Festival in Chongqing, China.
+          </p>
+          <p>
+            Seated on the main festival stage with a traditional ensemble of singing bowls and gongs, he conducted full acoustic sound immersions for festival participants and practitioners.
+          </p>
+          <div class="archive-evidence-note">
+            <strong>Official Evidence Record:</strong> Ref EEEN-1695128-26(1) — Page 1, Photo 1: On-stage sound healing presentation.
+          </div>
+        </div>
+      </article>
+
+      <!-- Chapter 6: Chongqing Teaching & Demonstrations -->
+      <article class="archive-chapter reverse">
+        <div class="archive-media">
+          <img src="images/timeline-chongqing-teaching.jpg" alt="Master Saroj teaching singing bowl technique to students in Chongqing" />
+          <p class="caption">Chongqing, China: Mr. Shakya teaching students, holding a traditional Nepali singing bowl while explaining its use.</p>
+        </div>
+        <div class="archive-copy">
+          <p class="archive-date-tag">22–24 August 2025 · Chongqing, China</p>
+          <h3 class="archive-title">Masterclasses & Healing Demonstrations</h3>
+          <p>
+            Alongside stage sessions, Master Shakya led intensive group workshops, guiding students through the nuanced art of striking, circling, and feeling bowl vibrations.
+          </p>
+          <p>
+            He also gave live demonstrations of singing bowl placement techniques on participants, showing how vibrational resonance directly releases bodily tension.
+          </p>
+          <div class="archive-evidence-note">
+            <strong>Official Evidence Record:</strong> Ref EEEN-1695128-26(1) — Page 2, Photos 2 & 3: Technique instruction & therapy demonstrations.
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="section section-craft" style="text-align: center;">
+    <div class="container" style="max-width: 760px; margin: 0 auto;">
+      <p class="eyebrow brown">Visit Us</p>
+      <h2 style="margin-bottom: 20px;">Experience the Sound in Thamel</h2>
+      <p class="lead-text" style="margin-bottom: 32px;">
+        Whether you are curious about learning singing bowl techniques or seeking a restful sound session, we welcome you to visit Shriba in Kathmandu.
+      </p>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="index.html#contact" class="btn btn-primary">Book a Session</a>
+        <a href="index.html#home" class="dwarikas-page-link">Return to Home &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo-mark.png" alt="" class="footer-mark" />
+        <div>
+          <p class="footer-name">Shriba</p>
+          <p class="footer-sub">Himalayan Singing Bowls</p>
+        </div>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Shriba Singing Bowl Centre · Thamel, Kathmandu</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // --- Dwarika's Timeline Slider Interaction ---
+    (function() {
+      const dwarikasTrack = document.getElementById('dwarikas-track');
+      const btnPrev = document.getElementById('dwarikas-btn-prev');
+      const btnNext = document.getElementById('dwarikas-btn-next');
+      const progressBar = document.getElementById('dwarikas-progress-bar');
+      const counter = document.getElementById('dwarikas-counter');
+
+      if (!dwarikasTrack) return;
+
+      const cards = dwarikasTrack.querySelectorAll('.dwarikas-card');
+      const totalCards = cards.length;
+
+      const getScrollStep = () => {
+        const card = dwarikasTrack.querySelector('.dwarikas-card');
+        if (!card) return 320;
+        const gap = parseInt(window.getComputedStyle(dwarikasTrack).gap) || 24;
+        return card.offsetWidth + gap;
+      };
+
+      if (btnNext) {
+        btnNext.addEventListener('click', () => {
+          dwarikasTrack.scrollBy({ left: getScrollStep(), behavior: 'smooth' });
+        });
+      }
+
+      if (btnPrev) {
+        btnPrev.addEventListener('click', () => {
+          dwarikasTrack.scrollBy({ left: -getScrollStep(), behavior: 'smooth' });
+        });
+      }
+
+      const updateSliderState = () => {
+        const maxScroll = dwarikasTrack.scrollWidth - dwarikasTrack.clientWidth;
+        const currentScroll = dwarikasTrack.scrollLeft;
+
+        if (maxScroll <= 0) {
+          if (progressBar) {
+            progressBar.style.width = '100%';
+            progressBar.style.transform = 'none';
+          }
+        } else {
+          const visibleRatio = dwarikasTrack.clientWidth / dwarikasTrack.scrollWidth;
+          const barWidthPct = Math.max(15, Math.min(100, visibleRatio * 100));
+          const scrollPct = Math.max(0, Math.min(1, currentScroll / maxScroll));
+          const maxTranslate = 100 - barWidthPct;
+          if (progressBar) {
+            progressBar.style.width = barWidthPct + '%';
+            progressBar.style.transform = `translateX(${scrollPct * (maxTranslate / (barWidthPct / 100))}%)`;
+          }
+        }
+
+        if (counter && totalCards > 0) {
+          const cardWidth = getScrollStep();
+          const activeIndex = Math.min(totalCards, Math.max(1, Math.round(currentScroll / cardWidth) + 1));
+          const formattedCurrent = String(activeIndex).padStart(2, '0');
+          const formattedTotal = String(totalCards).padStart(2, '0');
+          counter.textContent = `${formattedCurrent} / ${formattedTotal}`;
+        }
+      };
+
+      dwarikasTrack.addEventListener('scroll', updateSliderState, { passive: true });
+      window.addEventListener('resize', updateSliderState);
+      updateSliderState();
+    })();
+  </script>
+</body>
+</html>
+
