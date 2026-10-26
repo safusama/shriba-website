@@ -382,7 +382,11 @@ p { margin-bottom: 16px; color: rgba(0,0,0,0.85); }
   .studio-quote,
   .craft-copy p:last-child { white-space: normal; }
   .footer-inner { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px; }
-  .footer-brand { grid-column: 1 / -1; }
+  .footer-brand {
+    grid-column: 1 / -1;
+    justify-content: center;
+    width: 100%;
+  }
   .about-stagger, .visit-stagger { grid-template-columns: 1fr; gap: 40px; }
   .story-intro { grid-template-columns: 1fr 1.2fr; gap: 32px; }
   .story-timeline { grid-template-columns: repeat(2, 1fr); row-gap: 40px; }
@@ -779,11 +783,19 @@ p { margin-bottom: 16px; color: rgba(0,0,0,0.85); }
 @media (max-width: 900px) {
   .wa-section {
     flex-direction: column;
+    max-height: none;
+    min-height: 0;
+  }
+  .wa-image {
+    flex: 0 0 auto;
+    height: 300px;
   }
   .wa-image img {
-    min-height: 300px;
+    height: 100%;
+    min-height: 0;
   }
   .wa-content {
+    flex: 0 0 auto;
     padding: 40px 20px;
   }
   .wa-form-row {
@@ -962,6 +974,7 @@ p { margin-bottom: 16px; color: rgba(0,0,0,0.85); }
 
 @media (max-width: 900px) {
   .studio-quote { white-space: normal; }
+  .hero-logo-container.scrolled .logo-large { display: none; }
   .hero-logo-container {
     width: min(500px, calc(100vw - 32px));
     height: min(250px, calc((100vw - 32px) / 2));
