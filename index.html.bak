@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shriba — Hand-beaten Singing Bowls in Kathmandu</title>
+  <meta name="description" content="Discover hand-beaten Himalayan singing bowls in Thamel, Kathmandu. Visit Shriba for workshops, one-to-one sessions, and time to listen." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+</head>
+<body>
+
+  <!-- HEADER (Holds the nav links) -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="header-brand" aria-label="Shriba home">
+        <span class="header-brand-name">Shriba</span>
+        <span class="header-brand-location">Thamel · Kathmandu</span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <div class="nav-group nav-group-left">
+          <a href="#about">About</a>
+          <a href="#story">Timeline</a>
+        </div>
+        <div class="nav-group nav-group-right">
+          <a href="#services">Services</a>
+          <a href="#visit">Visit</a>
+          <a href="#contact" class="nav-cta">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-editorial" id="home">
+    <div class="hero-image-wrap">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto" aria-label="A singing bowl being played">
+        <source src="videos/singing-bowl-hero.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-logo-container" id="main-logo">
+        <img src="images/logo-hero.png" alt="Shriba" class="logo-large" />
+        <img src="images/logo-mark.png" alt="Shriba" class="logo-small" />
+      </div>
+    </div>
+    <h1 class="visually-hidden">Shriba Singing Bowl Centre in Thamel, Kathmandu</h1>
+  </section>
+
+  <!-- ABOUT SECTION (Staggered) -->
+  <section id="about" class="section">
+    <div class="container about-stagger">
+      <div class="about-image">
+        <img src="images/bowl.png" alt="Hand holding a brass singing bowl" />
+        <p class="caption">A singing bowl, held and heard in Kathmandu.</p>
+      </div>
+            <div class="about-text">
+        <h2>A small studio for sound and craft.</h2>
+        <p>
+          In the heart of Thamel, Shriba is a place to meet Himalayan singing bowls up close.
+          Explore hand-beaten Seven Metal Bowls, learn how to hold and play one, or settle in for a one-to-one sound session. We keep the experience personal, unhurried, and grounded in the craft.
+        </p>
+        <p class="italic-quote">A little time to learn, practice, and listen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPLE-STYLE TIMELINE SECTION -->
+  <section id="story" class="apple-lineup-section">
+    <div class="apple-lineup-container">
+
+      <!-- Header row: title left, link right -->
+      <div class="apple-lineup-header">
+        <h2 class="apple-lineup-title">A Living Tradition,<br>Carried Forward.</h2>
+        <a href="timeline.html" class="apple-lineup-viewall">Explore full timeline &rsaquo;</a>
+      </div>
+
+      <!-- Cards track -->
+      <div class="apple-lineup-track-wrap">
+        <div class="apple-lineup-track" id="apple-track" tabindex="0">
+
+          <!-- Card 1 -->
+          <article class="apple-card">
+            <div class="apple-card-media">
+              <img src="images/timeline-nepal-factory.jpg" alt="Saroj Shakya with trainees at Kathmandu singing bowl workshop" class="card-img-factory" loading="lazy" />
+            </div>
+            <div class="apple-card-body">
+              <p class="apple-card-label">Since the 1990s</p>
+              <h3 class="apple-card-title">Family Tradition</h3>
+              <p class="apple-card-desc">Rooted in Kathmandu craft, Master Saroj Shakya built a lifelong practice mastering hand-beaten bronze acoustics and training future therapists.</p>
+              <div class="apple-card-actions">
+                <a href="timeline.html#chapters" class="apple-btn-primary">Learn more</a>
+                <a href="#contact" class="apple-btn-link">Book a session &rsaquo;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="apple-card">
+            <div class="apple-card-media">
+              <img src="images/timeline-vietnam-class.jpg" alt="Singing bowl class and sound meditation in Vietnam" class="card-img-vietnam" loading="lazy" />
+            </div>
+            <div class="apple-card-body">
+              <p class="apple-card-label">2019–2024</p>
+              <h3 class="apple-card-title">Teaching Abroad</h3>
+              <p class="apple-card-desc">Carrying Himalayan sound traditions across Southeast Asia, leading therapist certification courses and masterclasses in Vietnam, Thailand, and Singapore.</p>
+              <div class="apple-card-actions">
+                <a href="timeline.html#chapters" class="apple-btn-primary">Learn more</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="apple-card">
+            <div class="apple-card-media">
+              <img src="images/timeline-australia.jpg" alt="Saroj Shakya with singing bowl at outdoor bell site in Australia" class="card-img-australia" loading="lazy" />
+            </div>
+            <div class="apple-card-body">
+              <p class="apple-card-label">2019–2024</p>
+              <h3 class="apple-card-title">Global Resonance</h3>
+              <p class="apple-card-desc">Sharing the restorative frequencies of traditional singing bowls through outdoor bell ceremonies and therapeutic sound gatherings across Australia.</p>
+              <div class="apple-card-actions">
+                <a href="timeline.html#chapters" class="apple-btn-primary">Learn more</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="apple-card">
+            <div class="apple-card-media">
+              <img src="images/practice.jpg" alt="One-to-one singing bowl session on the floor in Thamel studio" class="card-img-thamel" loading="lazy" />
+            </div>
+            <div class="apple-card-body">
+              <p class="apple-card-label apple-label-new">Now Open</p>
+              <h3 class="apple-card-title">A Centre in Thamel</h3>
+              <p class="apple-card-desc">Shriba in Thamel, Kathmandu — an intimate sanctuary for one-to-one floor therapy, tactile sound immersion, and hands-on singing bowl workshops.</p>
+              <div class="apple-card-actions">
+                <a href="#visit" class="apple-btn-primary">Visit us</a>
+                <a href="#contact" class="apple-btn-link">Book &rsaquo;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="apple-card">
+            <div class="apple-card-media">
+              <img src="images/timeline-chongqing-stage.jpg" alt="Saroj Shakya on stage at Yoga Meditation Festival in Chongqing" class="card-img-china-stage" loading="lazy" />
+            </div>
+            <div class="apple-card-body">
+              <p class="apple-card-label">2025</p>
+              <h3 class="apple-card-title">Chongqing Festival</h3>
+              <p class="apple-card-desc">Featured international presenter at the Yoga Meditation Festival in Chongqing, conducting main-stage sound healing with traditional singing bowls and gongs.</p>
+              <div class="apple-card-actions">
+                <a href="timeline.html#chapters" class="apple-btn-primary">Learn more</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="apple-card">
+            <div class="apple-card-media">
+              <img src="images/timeline-chongqing-teaching.jpg" alt="Saroj Shakya teaching bowl technique to students in Chongqing" class="card-img-china-teach" loading="lazy" />
+            </div>
+            <div class="apple-card-body">
+              <p class="apple-card-label">2025</p>
+              <h3 class="apple-card-title">Healing Technique</h3>
+              <p class="apple-card-desc">Teaching the precise art of holding and striking traditional bowls, demonstrating ancient Nepali acoustic placement techniques for deep physical relaxation.</p>
+              <div class="apple-card-actions">
+                <a href="timeline.html#chapters" class="apple-btn-primary">Learn more</a>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /track -->
+      </div><!-- /track-wrap -->
+
+      <!-- Bottom nav: arrows right -->
+      <div class="apple-lineup-footer">
+        <div class="apple-nav-btns">
+          <button class="apple-nav-btn" id="apple-btn-prev" aria-label="Previous" type="button">&#8249;</button>
+          <button class="apple-nav-btn" id="apple-btn-next" aria-label="Next" type="button">&#8250;</button>
+        </div>
+      </div>
+
+    </div><!-- /container -->
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="section section-alt">
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow brown">Services</p>
+        <h2>The Practice</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-block">
+          <h3>Workshops</h3>
+          <p>Learn to hold, strike and circle a Himalayan singing bowl. Small groups, patient pace, no prior experience needed.</p>
+        </div>
+        <div class="service-block">
+          <h3>Therapy Sessions</h3>
+          <p>One-to-one sessions on the floor, using bowls placed on and around the body. Soft light, textiles, unhurried.</p>
+        </div>
+        <div class="service-block">
+          <h3>Bowls &amp; Craft</h3>
+          <p>Hand-beaten Seven Metal Bowls for practice, export and retail. Come see how they are made and pick the one that sounds right.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT SECTION -->
+  <section id="visit" class="section">
+    <div class="container visit-stagger">
+      <div class="visit-text">
+        <p class="eyebrow brown">Visit</p>
+        <h2>Find us in Thamel.</h2>
+        <p class="lead-text">
+          Step in, sit with the bowls, and ask questions. We keep the space small and the pace slow.
+        </p>
+        <p>
+          Message us ahead to arrange a workshop or one-to-one session.
+        </p>
+        <a href="#contact" class="btn btn-primary">Plan your visit</a>
+        <dl class="facts">
+          <div>
+            <dt>Address</dt>
+            <dd>Thamel, Kathmandu, Nepal</dd>
+          </div>
+          <div>
+            <dt>Hours</dt>
+            <dd>Sun – Fri · 10:00 – 18:00</dd>
+          </div>
+        </dl>
+      </div>
+      <div class="visit-image">
+        <img src="images/practice.jpg" alt="Singing bowl practice session on the floor" />
+        <p class="caption">Real practice: floor, textiles, soft light.</p>
+      </div>
+    </div>
+    <div class="container visit-map">
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14130.92838861652!2d85.30688791481473!3d27.715483538200964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18fcc1a51269%3A0x686cd3d948b2c88c!2sThamel%2C%20Kathmandu%2044600%2C%20Nepal!5e0!3m2!1sen!2snp!4v1698765432109!5m2!1sen!2snp"
+          title="Map showing Shriba in Thamel, Kathmandu"
+          width="100%" height="400" style="border:0; border-radius: 2px;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CRAFT SECTION -->
+  <section class="section section-craft">
+    <div class="container craft-inner">
+      <div class="craft-heading">
+        <p class="eyebrow tan">The craft</p>
+        <h2>Made by hand. Shared with care.</h2>
+      </div>
+      <div class="craft-copy">
+        <p class="craft-lede">
+          The bowls we share are hand-beaten by Kathmandu artisans, with craft knowledge carried across generations. At Shriba, that living tradition continues through the simple acts of making, teaching, and listening.
+        </p>
+        <p>
+          Come learn the practice at your own pace. We share the sound and the craft without promising cures.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO SLIDER SECTION -->
+  <section class="section" style="background: var(--cream);">
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow brown">The practice</p>
+        <h2>Sound, shared around the world.</h2>
+        <p>Moments from workshops and sound sessions with Master Saroj Shakya.</p>
+      </div>
+      <!-- Slider Container -->
+      <div class="slider-container">
+        <div class="slider-track" id="journey-photos" role="region" aria-label="Photos from singing bowl workshops and sessions" tabindex="0">
+          <!-- Workshop & Practice Gallery -->
+          <div class="slide"><img src="images/timeline-chongqing-healing.jpg" alt="Master Saroj Shakya demonstrating singing bowl healing technique"></div>
+          <div class="slide"><img src="images/timeline-vietnam-class.jpg" alt="Singing bowl workshop class in Vietnam"></div>
+          <div class="slide"><img src="images/timeline-australia.jpg" alt="Singing bowl sound meditation in Australia"></div>
+          <div class="slide"><img src="images/timeline-nepal-factory.jpg" alt="Himalayan singing bowl therapist training in Nepal"></div>
+          <div class="slide"><img src="images/practice.jpg" alt="Singing bowl floor therapy in Thamel Kathmandu"></div>
+          <div class="slide"><img src="images/bowl.png" alt="Hand holding an authentic hand-beaten brass singing bowl"></div>
+        </div>
+      </div>
+      <div class="slider-controls" aria-label="Photo gallery controls">
+        <button class="slider-control" type="button" data-direction="previous" aria-label="Show previous photos" aria-controls="journey-photos">&larr;</button>
+        <button class="slider-control" type="button" data-direction="next" aria-label="Show next photos" aria-controls="journey-photos">&rarr;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section section-contact">
+    <div class="container contact-layout">
+      <div class="contact-header">
+        <p class="eyebrow tan">Get in touch</p>
+        <h2>Come say hello.</h2>
+      </div>
+      <div class="contact-card">
+        <h3 class="contact-name">Safal Shakya</h3>
+        <p class="contact-role">Sound Practitioner</p>
+        <ul class="contact-list">
+          <li>
+            <a href="tel:+9779808138005">+977 9808138005</a>
+          </li>
+          <li>
+            <a href="mailto:shribabowls@gmail.com">shribabowls@gmail.com</a> <!-- UPDATE YOUR NEW EMAIL HERE -->
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo-mark.png" alt="" class="footer-mark" />
+        <div>
+          <p class="footer-name">Shriba</p>
+          <p class="footer-sub">Himalayan Singing Bowls</p>
+        </div>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Shriba Singing Bowl Centre</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script>
+  // Simple scroll fade-in
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  });
+
+  const hiddenElements = document.querySelectorAll('.section, .cinematic-split, .slider-container');
+  hiddenElements.forEach((el) => el.classList.add('hidden'));
+  hiddenElements.forEach((el) => observer.observe(el));
+
+  document.querySelectorAll('.slider-control').forEach((button) => {
+    button.addEventListener('click', () => {
+      const track = document.getElementById(button.getAttribute('aria-controls'));
+      const direction = button.dataset.direction === 'next' ? 1 : -1;
+      track.scrollBy({ left: direction * track.clientWidth * 0.8, behavior: 'smooth' });
+    });
+  });
+</script>
+  <script>
+    // --- Scroll Logo Animation ---
+    const logo = document.getElementById('main-logo');
+    const header = document.getElementById('site-header');
+
+    const updateScrollHeader = () => {
+      if (window.scrollY > 100) {
+        logo.classList.add('scrolled');
+        header.classList.add('scrolled-header');
+      } else {
+        logo.classList.remove('scrolled');
+        header.classList.remove('scrolled-header');
+      }
+    };
+
+    window.addEventListener('scroll', updateScrollHeader, { passive: true });
+    updateScrollHeader();
+  </script>
+  <script>
+    // --- Apple-style Timeline Slider ---
+    (function() {
+      var track = document.getElementById('apple-track');
+      var btnPrev = document.getElementById('apple-btn-prev');
+      var btnNext = document.getElementById('apple-btn-next');
+      if (!track) return;
+
+      function getStep() {
+        var card = track.querySelector('.apple-card');
+        if (!card) return 300;
+        var gap = parseInt(window.getComputedStyle(track).gap) || 24;
+        return card.offsetWidth + gap;
+      }
+
+      btnNext && btnNext.addEventListener('click', function() {
+        track.scrollBy({ left: getStep(), behavior: 'smooth' });
+      });
+      btnPrev && btnPrev.addEventListener('click', function() {
+        track.scrollBy({ left: -getStep(), behavior: 'smooth' });
+      });
+
+      // Touch/drag support
+      var startX = 0, startScroll = 0, dragging = false;
+      track.addEventListener('mousedown', function(e) {
+        dragging = true; startX = e.pageX; startScroll = track.scrollLeft;
+        track.style.cursor = 'grabbing';
+      });
+      window.addEventListener('mouseup', function() {
+        dragging = false; track.style.cursor = 'grab';
+      });
+      track.addEventListener('mousemove', function(e) {
+        if (!dragging) return;
+        e.preventDefault();
+        track.scrollLeft = startScroll - (e.pageX - startX);
+      });
+    })();
+  </script>
+</body>
+</html>
